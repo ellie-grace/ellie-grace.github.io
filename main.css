@@ -23,7 +23,6 @@ html, body {
   justify-content: flex-start;
 }
 .navbar li {
-  /*min-width: 150px;*/
   align-self: center;
   
 }
@@ -49,13 +48,19 @@ html, body {
   
 
 }
-
-.navbar li:nth-of-type(2){
-  /*padding-left: 200px;*/
-}
-
 .navbar .nav-active a {
   color: black;
+}
+
+@media (max-width:600px) {
+  .navbar li a {
+    padding-right: 1vw;
+    font-size: 15px;
+  }
+  .navbar li:nth-of-type(1){
+    min-width: 130px;
+    font-size: 18px;
+  }
 }
 .wrapper {
 
@@ -69,9 +74,6 @@ html, body {
     padding: 0;
     position: relative; 
 }
-/*section {
-  background-color: white;
-}*/
 
 @media screen and (max-width: 1350px){
   .wrapper {
@@ -90,10 +92,6 @@ html, body {
     .wrapper {
      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
   } 
-/*  h3 {
-    font-size: 12px !important;
-  }*/
-
   
 }
 @media screen and (max-width: 790px){
@@ -134,10 +132,7 @@ transition: .5s ease;
   backface-visibility: hidden;
   object-fit: cover;
    width: 100%;
-   height: 100%;
-
-
- 
+   height: 100%; 
 }
 
 h3 {
@@ -191,9 +186,10 @@ flex-basis: 49%;
 #social-media ul {
   list-style: none; 
   display: flex;
-
+  padding-left: 0;
   justify-content: center;
 }
+
 #social-media li {
   flex-basis: 5vw;
 }
@@ -262,52 +258,24 @@ flex-basis: 49%;
 }
 
 
-/*modal */
 
-#modal {
-  display: none;
-    position: fixed;
-    font-family: Monserrat, Helvetica, sans-serif;
-    top: 0;
-    left: 0;
-    /*background: rgba(0, 0, 0, 0.8);*/
-    z-index: 99999;
-    height: 100%;
-    width: 100%;
-}
-.modalcontent {
-  border-radius: 10px;
-    position: absolute;
-    top: 78vh;
-    right: -100px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    background: #e2e2e2;
-    width: 200px;
-    padding: 20px;
-    box-shadow: 0 0 8px 2px #282828;
-    
+
+table {
+  width: 80%;
+  padding-left: 8%;
+  font-weight: 300;
 }
 
-.modalcontent > * {
-  text-align: center;
-  color: #282828;
-  font-size: 14px;
-}
-.modalcontent h6 {
-  
-  
-}
-#button {
-  border-radius: 2px;
-  background-color: #e2e2e2;
-  color: #282828;
-  margin: auto;
-  display:  block;
-  float: center;
-  padding: 5px 15px;
-  font-family: 'Source Sans Pro';
-  font-weight: 600;
-  border: 2px solid #282828;
+td, th {
+  border: 1px solid black;
 }
 
+.cookie {
+ padding-left: 5vw;
+ font-size: 'Raleway';
+}
+footer a,
+footer a:hover {
+  color: black;
+  text-decoration: none;
+}
