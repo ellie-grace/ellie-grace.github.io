@@ -6,7 +6,27 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="stylesheet" type="text/css" href="cookieconsent.min.css" />
+<script src="cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#fff"
+    },
+    "button": {
+      "background": "#000"
+    }
+  },
+  "content": {
+    "href": "cookie.html"
+  },
+  "showLink": true,
+  "theme": "classic",
+  "position": "bottom-left"
+})});
+</script>
         <link rel="manifest" href="site.webmanifest">
         <link rel="icon" href="favicon.ico">
         <!-- Place favicon.ico in the root directory -->
@@ -32,7 +52,7 @@
     			<ul>
     				<li><a href="index.html">ELLIE GRACE //</a></li>
     				<li class="nav-active"><a href="index.html">PHOTOBLOG</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+            <li><a h                                     ref="about.html">ABOUT</a></li>
             <li><a href="#social-media">CONTACT</a></li>
     				
     			</ul>
@@ -405,6 +425,6 @@
     		
     	</footer>
        
-          <!--Start Cookie Script--> <script type="text/javascript" charset="UTF-8" src="http://chs03.cookie-script.com/s/505425c229eab1cda22e091ea2e065b6.js"></script> <!--End Cookie Script-->
+        
     </body>
 </html>
